@@ -3,6 +3,7 @@ import logo from './photos/kelownagaslogo.jpg';
 import Announcement from './components/Announcement.js';
 import About from './components/About.js';
 import Ufv from './components/Ufv.js';
+import Teams from './components/Teams.js';
 import './App.css';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Announcement />
             <About />
             <Ufv />
+            <Teams />
           </div>
       </header>
     </div>
