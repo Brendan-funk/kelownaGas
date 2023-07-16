@@ -1,0 +1,16 @@
+.Contact{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background: none;
+    color: #8c52ff;
+    border: none;
+}
+
+button:hover {
+    color: #00c856;
+}
