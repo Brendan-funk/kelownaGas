@@ -2,7 +2,15 @@
     color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .ufvLogo{
-    max-width: 20%;
+    max-width: 15%;
+}
+.body{
+    display: flex;
+    flex-direction: row;
+}
+.body p {
+    align-self: center;
 }

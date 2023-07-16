@@ -8,8 +8,10 @@
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     width: 90%;
+    align-items: center;
+    border: 1px solid red;
 }
 .OwLogo{
     max-width: 10%;
@@ -18,5 +20,13 @@
 .GameName {
     align-self:center;
     justify-self: left;
-    width:70%;
+    padding-left: 2em;
+}
+.Val {
+    max-width: 10%;
+    background: none;
+}
+
+.GameWriteUp {
+    padding-left: 5em;
 }
