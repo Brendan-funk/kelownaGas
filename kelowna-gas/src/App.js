@@ -1,22 +1,40 @@
-import logo from './logo.svg';
+import React from 'react';
+import logo from './photos/kelowna_gas_logo_green.png';
+import Home from './components/Home.js';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => {
+    setOpen(!open);
+  }
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <nav>
+          <img src={logo} className="logo" alt="logo" />
+          <div className='links'>
+            <p>About Us</p>
+            <div className='dropdown'>
+              <button onClick={handleOpen} className='ufv-button'>UFV esports</button>
+              {open ? (
+                <ul className='menu'>
+                <li className='menu-item'>
+                  <button>About UFV</button>
+                </li>
+                <li className='menu-item'>
+                  <button>Our Teams</button>
+                </li>
+                <li className='menu-item'>
+                  <button>Sign Up to Play</button>
+                </li>
+              </ul>) : null}
+            </div> 
+            <p>Contact Us</p>
+          </div>
+        </nav>
+        <Home />
       </header>
     </div>
   );
