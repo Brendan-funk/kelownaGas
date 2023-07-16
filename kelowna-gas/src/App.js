@@ -1,40 +1,26 @@
 import React from 'react';
-import logo from './photos/kelowna_gas_logo_green.png';
-import Home from './components/Home.js';
+import logo from './photos/kelownagaslogo.jpg';
+import Home from './components/Announcement.js';
 import './App.css';
 import { useState } from 'react';
 
 function App() {
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => {
-    setOpen(!open);
-  }
   return (
     <div className="App">
       <header className="App-header">
         <nav>
-          <img src={logo} className="logo" alt="logo" />
+        <img src={logo} className="logo" alt="logo" />
           <div className='links'>
-            <p>About Us</p>
-            <div className='dropdown'>
-              <button onClick={handleOpen} className='ufv-button'>UFV esports</button>
-              {open ? (
-                <ul className='menu'>
-                <li className='menu-item'>
-                  <button>About UFV</button>
-                </li>
-                <li className='menu-item'>
-                  <button>Our Teams</button>
-                </li>
-                <li className='menu-item'>
-                  <button>Sign Up to Play</button>
-                </li>
-              </ul>) : null}
-            </div> 
-            <p>Contact Us</p>
+            <button onClick={null} className='nav-button'>About Us</button>
+            <button onClick={null} className='nav-button'>About UFV esports</button>
+            <button onClick={null} className='nav-button'>Our Teams</button>
+            <button onClick={null} className='nav-button'>Sign Up to Play</button>
+            <button onClick={null} className='nav-button'>Contact Us</button>
           </div>
-        </nav>
-        <Home />
+          </nav>
+          <div className='components'>
+            <Home />
+          </div>
       </header>
     </div>
   );
