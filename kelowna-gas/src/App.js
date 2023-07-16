@@ -4,6 +4,7 @@ import Announcement from './components/Announcement.js';
 import About from './components/About.js';
 import Ufv from './components/Ufv.js';
 import Teams from './components/Teams.js';
+import SignUp from './components/SignUp.js';
 import './App.css';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <About />
             <Ufv />
             <Teams />
+            <SignUp />
           </div>
       </header>
     </div>
