@@ -11,7 +11,6 @@
     justify-content: center;
     width: 90%;
     align-items: center;
-    border: 1px solid red;
 }
 .OwLogo{
     max-width: 10%;
@@ -29,4 +28,12 @@
 
 .GameWriteUp {
     padding-left: 5em;
+}
+
+.Rocket {
+    max-width: 10%;
+}
+
+.Cs {
+    max-width: 10%;
 }
