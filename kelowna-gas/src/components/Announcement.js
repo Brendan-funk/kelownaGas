@@ -1,8 +1,8 @@
 import React from "react";
 import gif from "../photos/kgxufv.gif";
-import './Home.css'
+import './Announcement.css'
 
-export default function Announcement() {
+export default function Announcement(props) {
     return (
         <main className="announcemnet">
             <img src={gif}className="gif"/>

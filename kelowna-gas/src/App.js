@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from './photos/kelownagaslogo.jpg';
-import Home from './components/Announcement.js';
+import Announcement from './components/Announcement.js';
+import About from './components/About.js';
+import Ufv from './components/Ufv.js';
 import './App.css';
-import { useState } from 'react';
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
           </div>
           </nav>
           <div className='components'>
-            <Home />
+            <Announcement />
+            <About />
+            <Ufv />
           </div>
       </header>
     </div>

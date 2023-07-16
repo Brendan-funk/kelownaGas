@@ -1,0 +1,8 @@
+.Ufv {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.ufvLogo{
+    max-width: 20%;
+}

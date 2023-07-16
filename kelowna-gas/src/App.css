@@ -13,7 +13,6 @@ nav{
   display: flex;
   flex-direction: column;
   justify-content: left;
-  border: 1px solid red;
   align-items: center;
   width: 7%;
   height: 100vh;
