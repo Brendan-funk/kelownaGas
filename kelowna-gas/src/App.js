@@ -6,14 +6,12 @@ import Ufv from './components/Ufv.js';
 import Teams from './components/Teams.js';
 import SignUp from './components/SignUp.js';
 import ContactUs from './components/ContactUs.js';
-import ow from './photos/overwatch.png';
-import val from './photos/val.png';
-import rocket from './photos/rocket.png';
-import cs from './photos/cs2.jpg';
 import owInfo from './teamData/ow.js';
 import valInfo from './teamData/val.js';
+import csInfo from './teamData/cs.js';
 import { useState } from 'react';
 import './App.css';
+import rocketInfo from './teamData/rocket';
 
 function App() {
   const [team, setTeam]= useState({});
@@ -42,16 +40,16 @@ function App() {
               <h1>Our Teams</h1>
               <div className='teamToggle'>
                 <button onClick={() => setTeam({logo: owInfo.logo, name:owInfo.name, writeUp:owInfo.writeUp})}>
-                  <img className='logoButton'src ={ow}/>
+                  <img className='logoButton'src ={owInfo.logo}/>
                 </button>
                 <button onClick={() => setTeam({logo: valInfo.logo, name:valInfo.name, writeUp:valInfo.writeUp})}>
-                  <img className='logoButton' id='val'src={val}/>
+                  <img className='logoButton' id='val'src={valInfo.logo}/>
                 </button>
-                <button>
-                  <img className='logoButton'src={rocket}/>
+                <button onClick={() => setTeam({logo: rocketInfo.logo, name:rocketInfo.name, writeUp:rocketInfo.writeUp})}>
+                  <img className='logoButton'src={rocketInfo.logo}/>
                 </button>
-                <button>
-                  <img className='logoButton' id='cs'src={cs}/>
+                <button onClick={() => setTeam({logo: csInfo.logo, name:csInfo.name, writeUp:csInfo.writeUp})}>
+                  <img className='logoButton' id='cs'src={csInfo.logo}/>
                 </button>
               </div>
               {team? (<Teams

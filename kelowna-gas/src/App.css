@@ -11,7 +11,7 @@ header{
 }
 nav{
   position: fixed;
-  top: 0;
+  top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: left;

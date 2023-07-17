@@ -1,4 +1,4 @@
-import ow from '../photos/overwatch.png';
+import ow from '../photos/ow2.png';
 const owInfo = { 
     logo: ow,
     name: 'Overwatch2',
