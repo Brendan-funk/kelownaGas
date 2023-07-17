@@ -9,7 +9,6 @@ import './Teams.css';
 export default function Teams(props) {
     return (
         <div className='Teams'>
-            <h1>Our Teams</h1>
             <div className='GameHeader'>
                 <img src={props.logo} className='logo' alt='logo'/>
                 <h2 className='GameName'>Overwatch 2</h2>

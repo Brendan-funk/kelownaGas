@@ -50,3 +50,26 @@ nav{
   width: 85%;
   margin-left: 200px;
 }
+.logoButton {
+  width: 30%;
+}
+
+#Teams{
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.teamToggle{
+  display: flex;
+  border: 1px solid red;
+  height: 14em;
+  justify-content: center;
+}
+
+.teamToggle button {
+  border: 1px solid green;
+  width: 25%;
+}

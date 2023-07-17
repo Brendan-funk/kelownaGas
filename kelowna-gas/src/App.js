@@ -8,6 +8,8 @@ import SignUp from './components/SignUp.js';
 import ContactUs from './components/ContactUs.js';
 import ow from './photos/overwatch.png';
 import val from './photos/val.png';
+import rocket from './photos/rocket.png';
+import cs from './photos/cs2.jpg';
 import './App.css';
 
 function App() {
@@ -33,13 +35,20 @@ function App() {
               <Ufv />
             </div>
             <div id="Teams">
+              <h1>Our Teams</h1>
               <div className='teamToggle'>
-              <button className='logoButton'>
-                <img src ={ow}/>
-              </button>
-              <button className='logoButton'>
-                <img src={val}/>
-              </button>
+                <button>
+                  <img className='logoButton'src ={ow}/>
+                </button>
+                <button>
+                  <img className='logoButton' id='val'src={val}/>
+                </button>
+                <button>
+                  <img className='logoButton'src={rocket}/>
+                </button>
+                <button>
+                  <img className='logoButton' id='cs'src={cs}/>
+                </button>
               </div>
               <Teams />
             </div>
