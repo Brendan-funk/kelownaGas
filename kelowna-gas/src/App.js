@@ -9,19 +9,26 @@ import owInfo from './teamData/ow.js';
 import valInfo from './teamData/val.js';
 import csInfo from './teamData/cs.js';
 import gif from "./photos/kgxufv.gif";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import rocketInfo from './teamData/rocket';
 
 function App() {
   const [team, setTeam]= useState(0);
+  const forceUpdate = React.useCallback(() => setTeam({}), []);
   const showTeam = function(newTeam) {
-    if(team) {
+    if (team) {
       hideTeam();
-      setTimeout(teamAnim(newTeam),1000);
+      setTimeout(
+        function() {
+            teamAnim(newTeam);
+        }
+        .bind(this),
+        250
+    );
     } else {
       teamAnim(newTeam);
-    }
+  }
   }
   const teamAnim = function(team) {
     let element = document.getElementById('gunga');

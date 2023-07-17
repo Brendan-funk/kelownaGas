@@ -8,22 +8,21 @@
     background-color: #1F1C29;
     background-size: cover;
     background-blend-mode: soft-light;
-    border: 1px solid green;
     max-height: 0px;
-    transition: all 1s;
+    
 }
 .TeamShow{
     max-height: 1000px;
+    transition: all 1s;
 }
 
 .GameInfo{
    opacity: 0;
-   transition:all 1s;
-   transition-delay: 1s;
 }
 
 .GameShow{
     opacity: 1;
+    transition:all 0.2s;
 }
 .GameHeader{
     color: white;
