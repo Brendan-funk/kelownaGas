@@ -10,9 +10,13 @@ import ow from './photos/overwatch.png';
 import val from './photos/val.png';
 import rocket from './photos/rocket.png';
 import cs from './photos/cs2.jpg';
+import owInfo from './teamData/ow.js';
+import valInfo from './teamData/val.js';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [team, setTeam]= useState({});
   return (
     <div className="App">
       <header className="App-header">
@@ -37,10 +41,10 @@ function App() {
             <div id="Teams">
               <h1>Our Teams</h1>
               <div className='teamToggle'>
-                <button>
+                <button onClick={() => setTeam({logo: owInfo.logo, name:owInfo.name, writeUp:owInfo.writeUp})}>
                   <img className='logoButton'src ={ow}/>
                 </button>
-                <button>
+                <button onClick={() => setTeam({logo: valInfo.logo, name:valInfo.name, writeUp:valInfo.writeUp})}>
                   <img className='logoButton' id='val'src={val}/>
                 </button>
                 <button>
@@ -50,7 +54,12 @@ function App() {
                   <img className='logoButton' id='cs'src={cs}/>
                 </button>
               </div>
-              <Teams />
+              {team? (<Teams
+                logo={team.logo}
+                name={team.name}
+                writeUp={team.writeUp}
+                />) : null }
+                
             </div>
             <div id='SignUp'>
               <SignUp />

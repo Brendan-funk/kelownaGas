@@ -12,28 +12,16 @@
     width: 90%;
     align-items: center;
 }
-.OwLogo{
-    max-width: 10%;
-}
-
 .GameName {
     align-self:center;
     justify-self: left;
     padding-left: 2em;
 }
-.Val {
-    max-width: 10%;
-    background: none;
-}
 
 .GameWriteUp {
     padding-left: 5em;
 }
-
-.Rocket {
+.logo{
     max-width: 10%;
-}
-
-.Cs {
-    max-width: 10%;
+    min-width: 10%;
 }
