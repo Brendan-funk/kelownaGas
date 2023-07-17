@@ -15,7 +15,6 @@ import rocketInfo from './teamData/rocket';
 
 function App() {
   const [team, setTeam]= useState(0);
-  const forceUpdate = React.useCallback(() => setTeam({}), []);
   const showTeam = function(newTeam) {
     if (team) {
       hideTeam();
@@ -85,6 +84,8 @@ function App() {
                 name={team.name}
                 writeUp={team.writeUp}
                 banner={team.banner}
+                roster={team.roster}
+                highlight={team.highlight? team.highlight : null}
                 />) : <Teams/> }
                 
             </div>

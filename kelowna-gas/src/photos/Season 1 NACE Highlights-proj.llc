@@ -1,0 +1,10 @@
+{
+  version: 1,
+  mediaFileName: 'Season 1 NACE Highlights.mp4',
+  cutSegments: [
+    {
+      end: 44.20545289875,
+      name: '',
+    },
+  ],
+}

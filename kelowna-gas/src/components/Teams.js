@@ -12,7 +12,16 @@ export default function Teams(props) {
                             <h2 className='GameName'>{props.name}</h2> 
                         </div>) : <></>
                     }
-                    {props && <p className='GameWriteUp'>{props.writeUp} </p>}
+                    {props  && <p className='GameWriteUp'>{props.writeUp} </p>}
+                    {props && <img src={props.roster}className='Roster' alt=''/>}
+                    {props.highlight ? (
+                        <div className='Highlight-Div'>
+                            <h1>Highlights</h1>
+                            <video className='Highlight' alt='' autoPlay>
+                                <source src={props.highlight} type='video/mp4'/>
+                            </video>
+                        </div>) : <></>
+                }
                 </div>
             </div>
     )
