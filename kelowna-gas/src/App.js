@@ -5,7 +5,6 @@ import About from './components/About.js';
 import Ufv from './components/Ufv.js';
 import Teams from './components/Teams.js';
 import SignUp from './components/SignUp.js';
-import ContactUs from './components/ContactUs.js';
 import owInfo from './teamData/ow.js';
 import valInfo from './teamData/val.js';
 import csInfo from './teamData/cs.js';
@@ -25,8 +24,7 @@ function App() {
             <a href='#About' className='nav-button'>About Us</a>
             <a href='#Ufv' className='nav-button'>About UFV esports</a>
             <a href='#Teams' className='nav-button'>Our Teams</a>
-            <a href='#SignUp'className='nav-button'>Sign Up to Play</a>
-            <a href='#Contact' className='nav-button'>Contact Us</a>
+            <a href='#SignUp'className='nav-button'>Sign Up/Contact</a>
           </div>
           </nav>
           <div className='components'>
@@ -65,11 +63,12 @@ function App() {
             <div id='SignUp'>
               <SignUp />
             </div>
-            <div id='Contact'>
-              <ContactUs />
-            </div>
           </div>
       </header>
+      <footer>
+        <p>Kelowna Gas ©</p>
+        <p>Made by Denda Web Development, 2023</p>
+      </footer>
     </div>
   );
 }

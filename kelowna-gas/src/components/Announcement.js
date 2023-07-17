@@ -1,13 +1,13 @@
 import React from "react";
-import gif from "../photos/kgxufv.gif";
+import gif from "../photos/jersey.png";
 import './Announcement.css'
 
 export default function Announcement(props) {
     return (
         <main className="announcemnet">
-            <h1>Announcement!</h1>
+            <h1>Announcements</h1>
             <img src={gif}className="gif"/>
-            <p>We are proud to announce our partnership with UFV esports</p>
+            <p>We have our new alternate jersey's coming out soon!!</p>
         </main>
     )
 }

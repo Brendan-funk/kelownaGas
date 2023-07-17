@@ -1,11 +1,13 @@
+.Form {
+    background-image: url('../photos/setup.png');
+    background-size: cover;
+    background-position-y: 30%;
+}
 .Signup {
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #00AB49;
-    background-image: url('../photos/setup.png');
-    background-position-y: 41%;
 }
 
 .SignUpLink {
@@ -14,5 +16,21 @@
 }
 
 .SignUpLink:hover {
+    color: #8c52ff;
+}
+.ContactUs{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background: none;
+    color: #00c856;
+    border: none;
+}
+
+button:hover {
     color: #8c52ff;
 }
