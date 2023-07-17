@@ -1,3 +1,5 @@
+
+
 .Teams {
     color: #00AB49;
     display: flex;
@@ -6,6 +8,22 @@
     background-color: #1F1C29;
     background-size: cover;
     background-blend-mode: soft-light;
+    border: 1px solid green;
+    max-height: 0px;
+    transition: all 1s;
+}
+.TeamShow{
+    max-height: 1000px;
+}
+
+.GameInfo{
+   opacity: 0;
+   transition:all 1s;
+   transition-delay: 1s;
+}
+
+.GameShow{
+    opacity: 1;
 }
 .GameHeader{
     color: white;

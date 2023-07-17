@@ -15,6 +15,15 @@ import rocketInfo from './teamData/rocket';
 
 function App() {
   const [team, setTeam]= useState(0);
+  const showTeam = function(team) {
+    let element = document.getElementById('gunga');
+    element.classList.remove('TeamShow');
+    element.classList.add('TeamShow');
+    element = document.getElementById('ginga');
+    element.classList.remove('GameShow');
+    element.classList.add('GameShow');
+    setTeam(team);
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -39,16 +48,16 @@ function App() {
             <div id="Teams">
               <h1>Our Teams</h1>
               <div className='teamToggle'>
-                <button onClick={() => {setTeam(owInfo); console.log(team);}}>
+                <button onClick={() => showTeam(owInfo)}>
                   <img className='logoButton'src ={owInfo.logo}/>
                 </button>
-                <button onClick={() => setTeam(valInfo)}>
+                <button onClick={() => showTeam(valInfo)}>
                   <img className='logoButton' src={valInfo.logo}/>
                 </button>
-                <button onClick={() => setTeam(rocketInfo)}>
+                <button onClick={() => showTeam(rocketInfo)}>
                   <img className='logoButton'src={rocketInfo.logo}/>
                 </button>
-                <button onClick={() => setTeam(csInfo)}>
+                <button onClick={() => showTeam(csInfo)}>
                   <img className='logoButton' src={csInfo.logo}/>
                 </button>
               </div>
@@ -57,7 +66,7 @@ function App() {
                 name={team.name}
                 writeUp={team.writeUp}
                 banner={team.banner}
-                />) : null }
+                />) : <Teams/> }
                 
             </div>
             <div id='SignUp'>

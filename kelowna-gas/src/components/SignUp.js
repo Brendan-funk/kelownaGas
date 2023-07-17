@@ -12,7 +12,7 @@ export default function SignUp () {
             <div className="ContactUs">
                 <h1>Contact Us</h1>
                 <p> For business or sponsorship inquiries please email us at</p>
-                <button onPress={() => Linking.openURL('mailto:email@email.com')}>email@email.com</button>
+                <button onClick={() => Linking.openURL('mailto:email@email.com')}>email@email.com</button>
             </div>
         </div>
     )

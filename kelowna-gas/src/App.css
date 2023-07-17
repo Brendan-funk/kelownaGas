@@ -1,6 +1,4 @@
 .App {
-  height: 100vh;
-  width: 100vw;
   background-color: black;
 }
 header{
@@ -54,6 +52,7 @@ nav{
 .components {
   width: 90%;
   margin-left: 250px;
+  border: 1px solid red
 }
 .logoButton {
   width: 30%;
