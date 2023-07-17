@@ -1,9 +1,10 @@
 .Ufv {
-    color: #1F1C29;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #00AB49;
+    background-image: url('../photos/ufv.png');
+    background-size: cover;
 }
 .ufvLogo{
     max-width: 15%;

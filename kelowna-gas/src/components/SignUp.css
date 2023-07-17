@@ -1,7 +1,18 @@
 .Signup {
-    color: #1F1C29;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #00AB49;
+    background-image: url('../photos/setup.png');
+    background-position-y: 41%;
+}
+
+.SignUpLink {
+    text-decoration: none;
+    color: #00c856;
+}
+
+.SignUpLink:hover {
+    color: #8c52ff;
 }

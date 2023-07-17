@@ -1,8 +1,11 @@
 import ow from '../photos/ow2.png';
+import owBanner from '../photos/ow2banner.jpg';
 const owInfo = { 
     logo: ow,
     name: 'Overwatch2',
-    writeUp : 'Endeavor bachelor but add eat pleasure doubtful sociable. Age forming covered you entered the examine. Blessing scarcely confined her contempt wondered shy. Dashwoods contented sportsmen at up no convinced cordially affection. Am so continued resembled frankness disposing engrossed dashwoods. Earnest greater on no observe fortune norland. Hunted mrs ham wishes stairs. Continued he as so breakfast shameless. All men drew its post knew. Of talking of calling however civilly wishing resolve.',
+    writeUp : `In Fall '22, UFV Overwatch finished rank 3 in the Western Conference of North America, Div. 1. In Spring, this team made it through to the semi-final before losing to #1 seed, UNLV.
+    This is considered our flagship team.`,
+    banner: owBanner
     }
 
 export default owInfo;

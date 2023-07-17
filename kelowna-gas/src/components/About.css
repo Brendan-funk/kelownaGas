@@ -4,6 +4,11 @@
     flex-direction: column;
     align-items: center;
     background-color: #1F1C29;
+    background-image: url('../photos/kelowna.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:inherit;
+    background-blend-mode:soft-light;
 }
 .About p{
     width: 70%;
