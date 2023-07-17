@@ -15,14 +15,26 @@ import rocketInfo from './teamData/rocket';
 
 function App() {
   const [team, setTeam]= useState(0);
-  const showTeam = function(team) {
+  const showTeam = function(newTeam) {
+    if(team) {
+      hideTeam();
+      setTimeout(teamAnim(newTeam),1000);
+    } else {
+      teamAnim(newTeam);
+    }
+  }
+  const teamAnim = function(team) {
     let element = document.getElementById('gunga');
-    element.classList.remove('TeamShow');
     element.classList.add('TeamShow');
     element = document.getElementById('ginga');
-    element.classList.remove('GameShow');
     element.classList.add('GameShow');
     setTeam(team);
+  }
+  const hideTeam = function() {
+    let element = document.getElementById('gunga');
+    element.classList.remove('TeamShow');
+    element = document.getElementById('ginga');
+    element.classList.remove('GameShow');
   }
   return (
     <div className="App">
