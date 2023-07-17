@@ -17,7 +17,7 @@ nav{
   justify-content: left;
   align-items: center;
   width: 175px;
-  height: 100vh;
+  height: 150vh;
 }
 .links{
   display: flex;
@@ -27,11 +27,6 @@ nav{
   color: #8c52ff;
   height: 40%;
   text-align: center;
-
-}
-
-.logo{
-  max-height: 12%;
 }
 
 .nav-button {
@@ -47,8 +42,8 @@ nav{
   color: #00c856;
 }
 .components {
-  width: 85%;
-  margin-left: 200px;
+  width: 90%;
+  margin-left: 250px;
 }
 .logoButton {
   width: 30%;
@@ -56,20 +51,23 @@ nav{
 
 #Teams{
   display: flex;
-  color: white;
+  background-color: #1F1C29;
   flex-direction: column;
   align-items: center;
+  color:#00AB49;
+  
 }
 
 
 .teamToggle{
   display: flex;
-  border: 1px solid red;
-  height: 14em;
-  justify-content: center;
+  height: 10em;
+  justify-content: space-evenly;
 }
 
 .teamToggle button {
-  border: 1px solid green;
   width: 25%;
+}
+#logo{
+  max-height: 10%;
 }

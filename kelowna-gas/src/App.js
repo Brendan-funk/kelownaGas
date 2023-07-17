@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <nav>
-          <img src={logo} className="logo" alt="logo"/>
+          <img src={logo} id="logo" alt="logo"/>
           <div className='links'>
             <a href='#About' className='nav-button'>About Us</a>
             <a href='#Ufv' className='nav-button'>About UFV esports</a>
@@ -43,13 +43,13 @@ function App() {
                   <img className='logoButton'src ={owInfo.logo}/>
                 </button>
                 <button onClick={() => setTeam({logo: valInfo.logo, name:valInfo.name, writeUp:valInfo.writeUp})}>
-                  <img className='logoButton' id='val'src={valInfo.logo}/>
+                  <img className='logoButton' src={valInfo.logo}/>
                 </button>
                 <button onClick={() => setTeam({logo: rocketInfo.logo, name:rocketInfo.name, writeUp:rocketInfo.writeUp})}>
                   <img className='logoButton'src={rocketInfo.logo}/>
                 </button>
                 <button onClick={() => setTeam({logo: csInfo.logo, name:csInfo.name, writeUp:csInfo.writeUp})}>
-                  <img className='logoButton' id='cs'src={csInfo.logo}/>
+                  <img className='logoButton' src={csInfo.logo}/>
                 </button>
               </div>
               {team? (<Teams

@@ -8,7 +8,12 @@ export default function Ufv() {
             <h1>About UFV Esports</h1>
             <div className='body'>
                 <img src={logo} className='ufvLogo'/>
-                <p>Nor hence hoped her after other known defer his. For county now sister engage had season better had waited. Occasional mrs interested far expression acceptance. Day either mrs talent pulled men rather regret admire but. Life ye sake it shed. Five lady he cold in meet up. Service get met adapted matters offence for. Principles man any insipidity age you simplicity understood. Do offering pleasure no ecstatic whatever on mr directly.</p>
+                <div className='writing'>
+                    <p>Our Vision:</p>
+                    <p>We want to be a part of creating an environment where people who grow up gamers are excited about the legitimate, achievable opportunities they have to play on competitive teams, find jobs, and pursue their professional esports dreams.</p>
+                    <p>Mission:</p>
+                    <p>To Develop Generational Talent in the Rapidly Growing Competitive Esports Environment</p>
+                </div>
             </div>
         </div>
     )

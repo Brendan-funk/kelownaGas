@@ -1,6 +1,7 @@
 .Signup {
-    color: white;
+    color: #1F1C29;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #00AB49;
 }
