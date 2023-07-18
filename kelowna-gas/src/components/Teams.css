@@ -13,7 +13,9 @@
 }
 .TeamShow{
     max-height: 2000px;
-    transition: all 1s;
+    transition: all 1s linear;
+    display: flex;
+    flex-grow:1;
 }
 
 .GameInfo{

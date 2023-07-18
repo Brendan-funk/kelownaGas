@@ -17,7 +17,7 @@ export default function Teams(props) {
                     {props.highlight ? (
                         <div className='Highlight-Div'>
                             <h1>Highlights</h1>
-                            <video className='Highlight' alt='' autoPlay>
+                            <video className='Highlight' alt='' autoPlay loop>
                                 <source src={props.highlight} type='video/mp4'/>
                             </video>
                         </div>) : <></>
