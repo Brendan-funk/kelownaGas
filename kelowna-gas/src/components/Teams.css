@@ -9,10 +9,10 @@
     background-size: cover;
     background-blend-mode: soft-light;
     max-height: 0px;
-    
+    overflow: auto;
 }
 .TeamShow{
-    max-height: 2000px;
+    max-height: 1000px;
     transition: all 1s linear;
     display: flex;
     flex-grow:1;
