@@ -1,82 +1,48 @@
+.App {
+  height: 100%;
+}
 header{
   background-color: #1F1C29;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.coverImg{
-  width: 100%;
-}
-nav{
-  position: fixed;
-  top: 10px;
-  display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: start;
-  width: 250px;
-  height: 150vh;
-  background-size: contain;
-  background-color: black;
-  background-image: url('./photos/transparentpurplelogo.png');
-  background-position: 3em;
-  background-position-y: 140px;
+}
 
+nav{
+  display: flex;
+  align-items: center;
 }
 .links{
+  align-items: end;
   display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  width: 60%;
-  color: #8c52ff;
-  height: 40%;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  font-size: x-large;
+  height: 100%;
   text-align: center;
 }
 
-.nav-button {
-  background: none;
-  color: inherit;
-  font: inherit;
-  border: none;
-  text-decoration: none;
-  width: 100%;
+ul{
+  list-style: none;
 }
 
-.nav-button:hover {
-  color: #00c856;
+a{
+  text-decoration: none;
+}
+
+.link {
+  color: white;
+  border: none;
+}
+
+.link:hover {
+  color: #00AB49;
+  border-bottom: 1px solid #00AB49;
 }
 .components {
-  width: 90%;
-  margin-left: 250px;
-}
-.logoButton {
-  width: 30%;
-}
-
-#Teams{
-  display: flex;
-  background-color: #1F1C29;
-  background-image: url('./photos/teamMenuBanner.jpg');
-  background-blend-mode:soft-light;
-  flex-direction: column;
-  align-items: center;
-  color:#00AB49;
-  
-}
-
-
-.teamToggle{
-  display: flex;
-  height: 10em;
-  justify-content: space-evenly;
-}
-
-.teamToggle button {
-  width: 25%;
+  width: 100%;
 }
 #logo{
-  max-height: 10%;
+  max-width: 6%;
 }
 
 footer{
@@ -84,8 +50,56 @@ footer{
   background-color: #1F1C29;
   display: flex;
   flex-direction: row;
-  margin-left: 250px;
   justify-content: space-between;
   padding-right: 1em;
   padding-left: 1em;
 }
+
+.dropdown-menu {
+  position: absolute;
+  top: 90px;
+  right: 600px;
+  background-color:#1F1C29;
+  padding: 10px 20px;
+  width: 200px;
+}
+
+.dropdown-menu::before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  transform: rotate(45deg);
+}
+
+.dropdown-menu ul li {
+  padding: 10px 0;
+}
+
+.dropdownItem{
+  display: flex;
+  margin: 10px auto;
+
+}
+
+.dropdownItem img {
+  max-width: 20px;
+  margin-right: 10px;
+}
+
+.dropdown-menu.active{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 500ms ease;
+}
+
+.dropdown-menu.inactive{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: 500ms ease;
+}
+

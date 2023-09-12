@@ -1,17 +1,19 @@
-.announcemnet{
+.announcement{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1em;
-    padding-left: 4em;
     color: white;
     background-color: #1F1C29;
     background-image: url('../photos/announcementBackground.png');
     background-size: cover;
+    justify-content: start;
 }
 
 .gif{
     width: 80%;
-    max-width: 100%;
-    max-height: 100%;
+    height: 80%;
+}
+
+.description {
+    font-size: x-large;
 }

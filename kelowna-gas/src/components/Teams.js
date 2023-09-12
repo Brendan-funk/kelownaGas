@@ -6,12 +6,10 @@ export default function Teams(props) {
     return (
             <div className='Teams'  id='gunga'style={{backgroundImage: `url(${props.banner})`}}>
                 <div className='GameInfo' id='ginga'>
-                   {props ? (
                         <div className='GameHeader'> 
                             <img src={props.logo} className='logo' alt='logo'/>
                             <h2 className='GameName'>{props.name}</h2> 
-                        </div>) : <></>
-                    }
+                        </div>
                     {props  && <p className='GameWriteUp'>{props.writeUp} </p>}
                     {props && <img src={props.roster}className='Roster' alt=''/>}
                     {props.highlight ? (
