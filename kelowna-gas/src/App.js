@@ -90,31 +90,6 @@ function App() {
                 />} />
             </Routes>
           </div>
-            {/* </div>
-              <div className='teamToggle'>
-                <button onClick={() => showTeam(owInfo)}>
-                  <img className='logoButton'src ={owInfo.logo}/>
-                </button>
-                <button onClick={() => showTeam(valInfo)}>
-                  <img className='logoButton' src={valInfo.logo}/>
-                </button>
-                <button onClick={() => showTeam(rocketInfo)}>
-                  <img className='logoButton'src={rocketInfo.logo}/>
-                </button>
-                <button onClick={() => showTeam(csInfo)}>
-                  <img className='logoButton' src={csInfo.logo}/>
-                </button>
-              </div>
-              {team? (<Teams
-                logo={team.logo}
-                name={team.name}
-                writeUp={team.writeUp}
-                banner={team.banner}
-                roster={team.roster}
-                highlight={team.highlight? team.highlight : null}
-                />) : <Teams/> }
-              */} 
-                
       </header>
       <footer>
         <p>Kelowna Gas ©</p>
